@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+
+    .sidenav {
+      height: 100%;
+      width: 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: width 0.3s;
+    }
+
+
+    .sidenav:hover {
+      width: 200px;
+    }
+
+
+    .sidenav a {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+
+    .sidenav a:hover {
+      background-color: #575757;
+    }
+
+
+    .sidenav a span {
+      margin-left: 10px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      white-space: nowrap;
+    }
+
+
+    .sidenav:hover a span {
+      opacity: 1;
+    }
+
+
+    .green { background-color: #4CAF50; }
+    .blue { background-color: #2196F3; }
+    .red { background-color: #f44336; }
+    .gray { background-color: #555; }
+
+
+    .main {
+      margin-left: 60px;
+      padding: 20px;
+      transition: margin-left 0.3s;
+    }
+
+
+    .sidenav:hover ~ .main {
+      margin-left: 200px;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="sidenav">
+  <a href="#" class="green"><div style="width:20px; height:20px; background:green;"></div><span>Green</span></a>
+  <a href="#" class="blue"><div style="width:20px; height:20px; background:blue;"></div><span>Blue</span></a>
+  <a href="#" class="red"><div style="width:20px; height:20px; background:red;"></div><span>Red</span></a>
+  <a href="#" class="gray"><div style="width:20px; height:20px; background:gray;"></div><span>Gray</span></a>
+</div>
+
+
+<div class="main">
+  <h2>Hoverable Sidenav Buttons</h2>
+  <p>Hover over the buttons in the left side navigation to open them.</p>
+</div>
+
+
+</body>
+</html>
+

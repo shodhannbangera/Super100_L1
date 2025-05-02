@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table1 {
+            border-collapse: separate;
+            background-color: rgb(173, 230, 201);
+            width: 75%;
+            border-radius: 20px;
+        }
+
+        .th1, .td1 {
+            border: 1px solid rgb(41, 39, 39);
+            padding: 5px;
+            border-radius: 50px;
+        }
+
+        .table2 {
+            border-collapse: separate;
+            margin: 20px;
+        }
+        .td2 {
+            width: 100px;
+            height: 60px;
+            border: 2px solid green;
+        }
+
+        .curve1{
+            border-radius: 3px;
+        }
+
+        .curve2{
+            border-radius: 5px;
+        }
+
+        .curve3{
+            border-radius: 7px;
+        }
+
+        .curve4{
+            border-radius: 10px;
+        }
+
+        .curve5{
+            border-radius: 15px;
+        }
+
+        .top-right-bottom-left-round{
+            border-radius: 0 15px 0 22px;
+        }
+        
+        .oval{ 
+            border-radius: 50%; 
+        }
+
+    </style>
+</head>
+<body>
+    <table id="table1" align="center">
+        <tr>
+            <th class="th1">Firstname</th>
+            <th class="th1">Lastname</th>
+            <th class="th1">Age</th>
+        </tr>
+        <tr>
+            <td class="td1">Jill</td>
+            <td class="td1">Smith</td>
+            <td class="td1">50</td>
+        </tr>
+        <tr>
+            <td class="td1">Eve</td>
+            <td class="td1">Jackson</td>
+            <td class="td1">94</td>
+        </tr>
+        <tr>
+            <td class="td1">John</td>
+            <td class="td1">Doe</td>
+            <td class="td1">80</td>
+        </tr>
+    </table>
+    <br><br>
+    <table id="table2" cellspacing="25" align="center">
+        <tr>
+          <td class="curve3 td2"></td>
+          <td class="curve4 td2"></td>
+          <td class="curve5 td2"></td>
+        </tr>
+        <tr>
+          <td class="curve4 td2"></td>
+          <td class="curve1 td2"></td>
+          <td class="curve5 td2"></td>
+        </tr>
+        <tr>
+          <td class="oval td2"></td>
+          <td class="curve2 td2"></td>
+          <td class="top-right-bottom-left-round td2"></td>
+        </tr>
+      </table>
+</body>
+</html>
